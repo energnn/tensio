@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tensio"
+version = "0.0.1"
+description = "tensio"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MPL-2.0"
+authors = [{ name = "Gautier Bureau", email = "gautier.bureau@rte-france.com" }]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tensio"]
